@@ -1,34 +1,34 @@
 /*global jQuery */
 /* Contents
 // ------------------------------------------------>
-	1.  LOADING SCREEN
-	2.  BACKGROUND INSERT
-	3.	NAV MODULE
-	4.  MOBILE MENU
-	5.  HEADER FIXED
-	6.  HEADER STATIC
-	7.  COUNTER UP              
-	8.  COUNTDOWN DATE  
-	9.  AJAX MAILCHIMP
-	10. AJAX CAMPAIGN MONITOR 
-	11. OWL CAROUSEL
-	12. MAGNIFIC POPUP
-	13. MAGNIFIC POPUP VIDEO
-	14. BACK TO TOP
-	15. GALLERY FLITER
-	16. WORK FLITER
-	17. PROGRESS BAR
-	18. AJAX CONTACT FORM       
-	19. LOAD MORE
-	20. ACCORDIONS
+    1.  LOADING SCREEN
+    2.  BACKGROUND INSERT
+    3.	NAV MODULE
+    4.  MOBILE MENU
+    5.  HEADER FIXED
+    6.  HEADER STATIC
+    7.  COUNTER UP              
+    8.  COUNTDOWN DATE  
+    9.  AJAX MAILCHIMP
+    10. AJAX CAMPAIGN MONITOR 
+    11. OWL CAROUSEL
+    12. MAGNIFIC POPUP
+    13. MAGNIFIC POPUP VIDEO
+    14. BACK TO TOP
+    15. GALLERY FLITER
+    16. WORK FLITER
+    17. PROGRESS BAR
+    18. AJAX CONTACT FORM       
+    19. LOAD MORE
+    20. ACCORDIONS
     21. SELECT BOX
     22. CONTACT FORM TOGGLE
 */
-(function($) {
+(function ($) {
     "use strict";
     /* ------------------  LOADING SCREEN ------------------ */
 
-    $(window).on("load", function() {
+    $(window).on("load", function () {
         $(".preloader").fadeOut(5000);
         $(".preloader").remove();
     });
@@ -39,7 +39,7 @@
     var $bgPattern = $(".bg-pattern");
     var $colBg = $(".col-bg");
 
-    $bgSection.each(function() {
+    $bgSection.each(function () {
         var bgSrc = $(this).children("img").attr("src");
         var bgUrl = 'url(' + bgSrc + ')';
         $(this).parent().css("backgroundImage", bgUrl);
@@ -47,7 +47,7 @@
         $(this).remove();
     });
 
-    $bgPattern.each(function() {
+    $bgPattern.each(function () {
         var bgSrc = $(this).children("img").attr("src");
         var bgUrl = 'url(' + bgSrc + ')';
         $(this).parent().css("backgroundImage", bgUrl);
@@ -55,7 +55,7 @@
         $(this).remove();
     });
 
-    $colBg.each(function() {
+    $colBg.each(function () {
         var bgSrc = $(this).children("img").attr("src");
         var bgUrl = 'url(' + bgSrc + ')';
         $(this).parent().css("backgroundImage", bgUrl);
@@ -67,20 +67,20 @@
 
     var $moduleIcon = $(".module-icon"),
         $moduleCancel = $(".module-cancel");
-    $moduleIcon.on("click", function(e) {
+    $moduleIcon.on("click", function (e) {
         $(this).parent().siblings().removeClass('module-active'); // Remove the class .active form any sibiling.
         $(this).parent(".module").toggleClass("module-active"); //Add the class .active to parent .module for this element.
         e.stopPropagation();
     });
     // If Click on [ Search-cancel ] Link
-    $moduleCancel.on("click", function(e) {
+    $moduleCancel.on("click", function (e) {
         $(".module").removeClass("module-active");
         e.stopPropagation();
         e.preventDefault();
         $(".wrapper").removeClass("sidearea-active");
     });
 
-    $(".sidearea-icon").on("click", function() {
+    $(".sidearea-icon").on("click", function () {
         if ($(this).parent().hasClass('module-active')) {
             $(".wrapper").addClass("sidearea-active");
             $(this).addClass("module-sidearea-close");
@@ -89,11 +89,11 @@
             $(this).removeClass("module-sidearea-close");
         }
     });
-    $('.module-cart .module-icon').click(function() {
+    $('.module-cart .module-icon').click(function () {
         $(this).siblings('.cart-box').toggleClass('active');
     });
     //Close Modules On Clicking OutSide
-    $(document).click(function() {
+    $(document).click(function () {
         if ($('.cart-box').hasClass('active')) {
             $('.module-cart .module-icon').click();
         }
@@ -104,7 +104,7 @@
         }
     });
     //Close Modules On Pressing Esc
-    $(document).keyup(function(e) {
+    $(document).keyup(function (e) {
         // ESCAPE key pressed
         if (e.keyCode == 27) {
             if ($('.cart-box').hasClass('active')) {
@@ -120,14 +120,14 @@
         }
     });
 
-    $('.cart-box , .module-cart .module-icon , .module-search .form-search , .module-sidearea .module-sidearea-wrap').click(function(e) {
+    $('.cart-box , .module-cart .module-icon , .module-search .form-search , .module-sidearea .module-sidearea-wrap').click(function (e) {
         e.stopPropagation();
     });
-    
+
     /* ------------------  MOBILE MENU ------------------ */
 
     var $dropToggle = $("[data-toggle='dropdown']");
-    $dropToggle.on("click", function(event) {
+    $dropToggle.on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $(this).parent().siblings().removeClass("show");
@@ -135,13 +135,13 @@
     });
 
     /*POPUP HEADER */
-    $(".toggle-icon").click(function() {
+    $(".toggle-icon").click(function () {
         $('.popup-menu').addClass("active");
     });
-    $(".popup-close i").click(function() {
+    $(".popup-close i").click(function () {
         $('.popup-menu').removeClass("active");
     });
-    $(document).keyup(function(e) {
+    $(document).keyup(function (e) {
         // ESCAPE key pressed
         if (e.keyCode == 27) {
             if ($('.popup-menu').hasClass('active')) {
@@ -152,25 +152,25 @@
 
     /* ------------------ HEADER FIXED ------------------ */
 
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 100) {
-            $('.navbar-sticky').addClass('navbar-fixed');
-        } else {
-            $('.navbar-sticky').removeClass('navbar-fixed');
-        }
-    });
+    // $(window).scroll(function () {
+    //     if ($(document).scrollTop() > 100) {
+    //         $('.navbar-sticky').addClass('navbar-fixed');
+    //     } else {
+    //         $('.navbar-sticky').removeClass('navbar-fixed');
+    //     }
+    // });
 
     /* ------------------  COUNTER UP ------------------ */
 
-    $.fn.zyCounter = function(options) {
+    $.fn.zyCounter = function (options) {
         var settings = $.extend({
             duration: 40,
             easing: 'swing',
         }, options);
-        return this.each(function() {
+        return this.each(function () {
             var $this = $(this);
 
-            var startCounter = function() {
+            var startCounter = function () {
                 var numbers = [];
                 var length = $this.length;
                 var number = $this.text();
@@ -195,7 +195,7 @@
 
                     numbers.unshift(newNum);
                 }
-                var counterUpDisplay = function() {
+                var counterUpDisplay = function () {
                     $this.text(numbers.shift());
                     setTimeout(counterUpDisplay, settings.duration);
                 };
@@ -214,9 +214,9 @@
 
     /* ------------------ COUNTDOWN DATE ------------------ */
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         if ($(".countdown").length > 0) {
-            $(".countdown").each(function() {
+            $(".countdown").each(function () {
                 var $countDown = $(this),
                     countDate = $countDown.data("count-date"),
                     newDate = new Date(countDate);
@@ -246,18 +246,18 @@
         }
     }
 
-    $('.subscribe-alert').on('click', function() {
+    $('.subscribe-alert').on('click', function () {
         $(this).fadeOut();
     });
 
     /* ------------------  AJAX CAMPAIGN MONITOR  ------------------ */
 
-    $('#campaignmonitor').submit(function(e) {
+    $('#campaignmonitor').submit(function (e) {
         e.preventDefault();
         $.getJSON(
             this.action + "?callback=?",
             $(this).serialize(),
-            function(data) {
+            function (data) {
                 if (data.Status === 400) {
                     alert("Error: " + data.Message);
                 } else { // 200
@@ -275,7 +275,7 @@
         var $carouselrtl = false;
     }
 
-    $(".carousel").each(function() {
+    $(".carousel").each(function () {
         var $Carousel = $(this);
         $Carousel.owlCarousel({
             loop: $Carousel.data('loop'),
@@ -300,7 +300,7 @@
         });
     });
 
-    $(".custom-carousel").each(function() {
+    $(".custom-carousel").each(function () {
         var $Carousel = $(this);
         $Carousel.owlCarousel({
             loop: $Carousel.data('loop'),
@@ -328,13 +328,13 @@
         thumbs: true,
         thumbsPrerendered: true
     });
-    $('#carousel-custom-dots .owl-dot').click(function() {
+    $('#carousel-custom-dots .owl-dot').click(function () {
         $(this).siblings(".owl-dot").removeClass('active');
         $(this).addClass('active');
         $(".custom-carousel").trigger('to.owl.carousel', [$(this).index(), 300]);
     });
 
-    $(".custom-carousel").on('changed.owl.carousel', function(event) {
+    $(".custom-carousel").on('changed.owl.carousel', function (event) {
         var items = event.item.count; // Number of items
         var item = event.item.index; // Position of the current item
         var owlDots = document.querySelectorAll('#carousel-custom-dots .owl-dot');
@@ -387,7 +387,7 @@
 
     if (backTop.length) {
         var scrollTrigger = 200, // px
-            backToTop = function() {
+            backToTop = function () {
                 var scrollTop = $(window).scrollTop();
                 if (scrollTop > scrollTrigger) {
                     backTop.addClass('show');
@@ -396,10 +396,10 @@
                 }
             };
         backToTop();
-        $(window).on('scroll', function() {
+        $(window).on('scroll', function () {
             backToTop();
         });
-        backTop.on('click', function(e) {
+        backTop.on('click', function (e) {
             e.preventDefault();
             $('html,body').animate({
                 scrollTop: 0
@@ -415,13 +415,13 @@
         $galleryAll = $("#gallery-all");
 
     // init Isotope For gallery
-    protfolioFinder.on("click", function(e) {
+    protfolioFinder.on("click", function (e) {
         e.preventDefault();
         $galleryFilter.find("a.active-filter").removeClass("active-filter");
         $(this).addClass("active-filter");
     });
     if (galleryLength > 0) {
-        $galleryAll.imagesLoaded().progress(function() {
+        $galleryAll.imagesLoaded().progress(function () {
             $galleryAll.isotope({
                 filter: "*",
                 animationOptions: {
@@ -433,10 +433,10 @@
             });
         });
     }
-    protfolioFinder.on("click", function(e) {
+    protfolioFinder.on("click", function (e) {
         e.preventDefault();
         var $selector = $(this).attr("data-filter");
-        $galleryAll.imagesLoaded().progress(function() {
+        $galleryAll.imagesLoaded().progress(function () {
             $galleryAll.isotope({
                 filter: $selector,
                 animationOptions: {
@@ -458,13 +458,13 @@
         $workAll = $("#all-cases");
 
     // init Isotope For gallery
-    workFinder.on("click", function(e) {
+    workFinder.on("click", function (e) {
         e.preventDefault();
         $workFilter.find("a.active-filter").removeClass("active-filter");
         $(this).addClass("active-filter");
     });
     if (workLength > 0) {
-        $workAll.imagesLoaded().progress(function() {
+        $workAll.imagesLoaded().progress(function () {
             $workAll.isotope({
                 filter: "*",
                 animationOptions: {
@@ -476,10 +476,10 @@
             });
         });
     }
-    workFinder.on("click", function(e) {
+    workFinder.on("click", function (e) {
         e.preventDefault();
         var $selector = $(this).attr("data-filter");
-        $workAll.imagesLoaded().progress(function() {
+        $workAll.imagesLoaded().progress(function () {
             $workAll.isotope({
                 filter: $selector,
                 animationOptions: {
@@ -496,7 +496,7 @@
     /* ------------------  SCROLL TO ------------------ */
 
     var aScroll = $('a[data-scroll="scrollTo"]');
-    aScroll.on('click', function(event) {
+    aScroll.on('click', function (event) {
         var target = $($(this).attr('href'));
         if (target.length) {
             event.preventDefault();
@@ -512,14 +512,14 @@
 
     /* ------------------ PROGRESS BAR ------------------ */
 
-    $(".progressbar").each(function() {
-        $(this).waypoint(function() {
+    $(".progressbar").each(function () {
+        $(this).waypoint(function () {
             var progressBar = $(".progress-bar"),
                 progressBarTitle = $(".progress-title .value");
-            progressBar.each(function() {
+            progressBar.each(function () {
                 $(this).css("width", $(this).attr("aria-valuenow") + "%");
             });
-            progressBarTitle.each(function() {
+            progressBarTitle.each(function () {
                 $(this).css('opacity', 1);
             });
         }, {
@@ -534,14 +534,14 @@
         contactResult = $('.contact-result');
     contactForm.validate({
         debug: false,
-        submitHandler: function(contactForm) {
+        submitHandler: function (contactForm) {
             $(contactResult, contactForm).html('Please Wait...');
             $.ajax({
                 type: "POST",
                 url: "assets/php/contact.php",
                 data: $(contactForm).serialize(),
                 timeout: 20000,
-                success: function(msg) {
+                success: function (msg) {
                     $(contactResult, contactForm).html('<div class="alert alert-success" role="alert"><strong>Thank you. We will contact you shortly.</strong></div>').delay(3000).fadeOut(2000);
                 },
                 error: $('.thanks').show()
@@ -552,7 +552,7 @@
 
     /* ------------------ LOAD MORE ------------------ */
 
-    $("#loadMore").on("click", function(e) {
+    $("#loadMore").on("click", function (e) {
         e.preventDefault();
         $(".content.d-none").slice(0, 3).removeClass('d-none');
         if ($(".content.d-none").length == 0) {
@@ -562,10 +562,10 @@
 
     /* ------------------ ACCORDIONS ------------------ */
 
-    $('.collapse').on('shown.bs.collapse', function() {
+    $('.collapse').on('shown.bs.collapse', function () {
         $(this).parent('.card').addClass('active-acc');
     });
-    $('.collapse').on('hidden.bs.collapse', function() {
+    $('.collapse').on('hidden.bs.collapse', function () {
         $(this).parent('.card').removeClass('active-acc');
     });
 
@@ -575,7 +575,7 @@
 
     /* ------------------  CONTACT FORM TOGGLE ------------------ */
 
-    $('.contact-types .button').click(function() {
+    $('.contact-types .button').click(function () {
         if ($('.contact-card .contact-body').hasClass($(this).data('form'))) {
             return false
         }

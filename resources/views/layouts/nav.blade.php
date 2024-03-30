@@ -1,5 +1,5 @@
-<header class="header header-1 header-transparent" id="navbar-spy">
-    <nav class="navbar navbar-expand-lg  navbar-bordered navbar-sticky" id="primary-menu">
+<header class="header header-1 header-transparent   navbar-fixed">
+    <nav class="navbar navbar-expand-lg  navbar-bordered navbar-sticky navbar-fixed" id="primary-menu">
         <div class="container"><a class="navbar-brand" href="index.html"><img class="logo logo-light" src="assets/images/logo/logo-light.png" alt="Equita Logo" /><img class="logo logo-dark" src="assets/images/logo/logo-dark.png" alt="Equita Logo" /></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <!--  Collect the nav links, forms, and other content for toggling  -->
@@ -27,8 +27,7 @@
                 <div class="module-container">
 
                     <!-- Start .module-contact-->
-                    <div class="module-contact"><a class="btn btn--primary" href="javascript:void(0)">تسجيل</a></div>
-                    <!-- Start .module-language-->
+                    <div class="module-contact"><a class="btn btn--primary" href="{{ route('login') }}">تسجيل</a></div> <!-- Start .module-language-->
                     <div class="module module-language">
                         <div class="selected"><span>en </span><i class="fas fa-chevron-down"></i></div>
                         <div class="lang-list">

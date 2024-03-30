@@ -90,7 +90,7 @@
 Services Bar Section
 ============================
 -->
-<section class="services-bar" id="servicesBar">
+{{-- <section class="services-bar" id="servicesBar">
     <div class="container">
         <div class="row no-gutters">
             <div class="col-12 col-md-6 col-lg-3 services-bar-card active"><i class="thumb-icon flaticon-002-warehouse"></i>
@@ -121,187 +121,169 @@ Services Bar Section
         <!-- End .row-->
     </div>
     <!-- End .container-->
-</section>
+</section> --}}
 <!--
 ============================
 About #1 Section
 ============================
 -->
-<section class="about pt-70" id="about-1">
+
+<section class="text-center mx-auto" style="margin:auto; padding-bottom:0; text-align:center">
+    <div class="heading heading-3 text-center" style="text-align:center">
+        <p class="">يهدف الموقع إلى</p>
+        <h6 class="heading-title text-center" style="max-width:800px; margin:auto">
+            توفير معلومات دقيقة وموثوقة حول مختلف المناطق الصناعية في مصر، بما في ذلك
+        </h6>
+    </div>
+</section>
+
+
+<section class="blog blog-grid">
     <div class="container">
+        <!-- End .row-->
         <div class="row">
-            <div class="col-12 col-lg-5">
-                <div class="about-img about-img-left">
-                    <div class="about-img-warp bg-overlay">
-                        <div class="bg-section"><img src="assets/images/about/1.jpg" alt="about Image" /></div>
-                    </div>
-                    <div class="counter">
-                        <div class="counter-icon"> <i class="flaticon-018-packaging"></i></div>
-                        <div class="counter-num"> <span class="counting">9,612</span>
-                            <p>m</p>
+            <div class=" col-12 col-md-6 col-lg-4">
+                <div class="blog-entry">
+                    <div class="entry-img"><a href="blog-single.html"><img src="assets/images/blog/grid/1.jpg" alt="Importers achieve cost savings through the First Sale rule!" /></a></div>
+                    <!-- End .entry-img-->
+                    <!-- End .entry-date-->
+                    <div class="entry-content">
+
+                        <div class="entry-title">
+                            <h4><a href="blog-single.html">Importers achieve cost savings through the First Sale rule!</a></h4>
                         </div>
-                        <div class="counter-name">
-                            <h6>delivered goods</h6>
+                        <div class="entry-date"><span class="month">jan 20</span><span class="date">2021</span></div>
+                        <div class="entry-bio">
+                            <p>The trade war currently ensuing between the nations around the globe, fiercely with China, shows no signs of the first set of tariffs levied against solar...</p>
                         </div>
+                        <div class="entry-more"> <a href="javascript:void(0)">Read more</a></div>
+
                     </div>
                 </div>
+                <!-- End .entry-content-->
             </div>
-            <div class="col-12 col-lg-7">
-                <div class="heading heading-3">
-                    <p class="heading-subtitle">Providing Full Range Of Transportation Worldwide.</p>
-                    <h2 class="heading-title">Reliable Logistic & Transport Solutions Saves Your Time!</h2>
-                </div>
-                <div class="about-block">
-                    <div class="row">
-                        <div class="col-12 col-lg-7">
-                            <div class="block-left">
-                                <p>Equita Group is a representative logistics operator providing full range of service in the sphere of customs clearance transportation worldwide for any cargo</p>
-                                <p>We pride ourselves on providing the best transport and shipping services available allover the world. Our skilled personnel, utilising the latest communications, tracking and combined with experience through integrated supply chain solutions!</p>
-                            </div>
+            <div class=" col-12 col-md-6 col-lg-4">
+                <div class="blog-entry">
+                    <div class="entry-img"><a href="blog-single.html"><img src="assets/images/blog/grid/2.jpg" alt="Cargo flow through better supply chain visibility, control." /></a></div>
+                    <!-- End .entry-img-->
+                    <!-- End .entry-date-->
+                    <div class="entry-content">
+
+                        <div class="entry-title">
+                            <h4><a href="blog-single.html">Cargo flow through better supply chain visibility, control.</a></h4>
                         </div>
-                        <div class="col-12 col-lg-5">
-                            <div class="block-right">
-                                <div class="detail">
-                                    <h6>quality </h6>
-                                    <p>Following the quality of our service thus having gained trust of our many clients.</p>
-                                </div>
-                                <div class="detail">
-                                    <h6>rellability</h6>
-                                    <p>We provide with cargo safety throughout all the stages of our delivery process..</p>
-                                </div>
-                            </div>
+                        <div class="entry-date"><span class="month">jan 23</span><span class="date">2021</span></div>
+                        <div class="entry-bio">
+                            <p>Global provider connected products for consumers, and enterprises worldwide, supply chain control is everything, provide visibility and traceability needed for...</p>
                         </div>
+                        <div class="entry-more"> <a href="javascript:void(0)">Read more</a></div>
+
                     </div>
                 </div>
-                <div class="signature-block">
-                    <div class="signature-body">
-                        <h6>john peter</h6>
-                        <p>founder</p>
-                    </div><img src="assets/images/signature/1.png" alt="signature" />
-                </div>
+                <!-- End .entry-content-->
             </div>
-            <!-- End .col-lg-6-->
+            <div class=" col-12 col-md-6 col-lg-4">
+                <div class="blog-entry">
+                    <div class="entry-img"><a href="blog-single.html"><img src="assets/images/blog/grid/3.jpg" alt="Importance of specialized focus in Projects, Oil &amp; Gas Logistics?" /></a></div>
+                    <!-- End .entry-img-->
+                    <!-- End .entry-date-->
+                    <div class="entry-content">
+
+                        <div class="entry-title">
+                            <h4><a href="blog-single.html">Importance of specialized focus in Projects, Oil &amp; Gas Logistics?</a></h4>
+                        </div>
+                        <div class="entry-date"><span class="month">jan 24</span><span class="date">2021</span></div>
+                        <div class="entry-bio">
+                            <p>Our team provides skilled &amp; experienced managers who know the intricacies of this vertical and focus on providing solutions in Oil &amp; Gas sector...</p>
+                        </div>
+                        <div class="entry-more"> <a href="javascript:void(0)">Read more</a></div>
+                    </div>
+                </div>
+                <!-- End .entry-content-->
+            </div>
         </div>
         <!-- End .row-->
     </div>
     <!-- End .container-->
 </section>
+
+
+
+
+
+<section dir="rtl" class="accordion accordion-3  text-right" style="padding-top:0;">
+    <div class="container">
+        <h2 class="text-right">دعم وتعزيز الاستثمار في المناطق الصناعية في مصر </h2>
+        <div class="row">
+            <!-- End .col-lg-4 -->
+            <div class="col-12 ">
+                <div id="accordion03">
+                    <div class="card ">
+                        <div class="card-heading">
+                            <a class="card-link collapsed" data-toggle="collapse" data-parent="#accordion03" href="#collapse01-1">تسويق الفرص الاستثمارية المتاحة. </a>
+                        </div>
+                        <div class="collapse " id="collapse01-1" data-parent="#accordion03">
+                            <div class="card-body ">With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information online or over the internet.</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-heading"><a class="card-link collapsed" data-toggle="collapse" data-parent="#accordion03" href="#collapse01-2">جذب المزيد من المستثمرين المحليين والأجانب. </a></div>
+                        <div class="collapse" id="collapse01-2" data-parent="#accordion03">
+                            <div class="card-body">With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information online or over the internet.</div>
+                        </div>
+                    </div>
+                    <div class="card active-acc">
+                        <div class="card-heading"><a class="card-link collapsed" data-toggle="collapse" data-parent="#accordion03" href="#collapse01-3">تحفيز نمو القطاع الصناعي في مصر. </a></div>
+                        <div class="collapse show" id="collapse01-3" data-parent="#accordion03">
+                            <div class="card-body">With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information online or over the internet.</div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-heading"><a class="card-link collapsed" data-toggle="collapse" data-parent="#accordion03" href="#collapse01-10">خلق فرص عمل جديدة للشباب. </a></div>
+                        <div class="collapse" id="collapse01-10" data-parent="#accordion03">
+                            <div class="card-body">With any financial product that you buy, it is important that you know you are getting the best advice from a reputable company as often you will have to provide sensitive information online or over the internet.</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End .row-->
+    </div>
+    <!-- End .container-->
+</section>
+
+
+
+
+
 <!--
+
+
+
 ============================
 CTA #1 Section
 ============================
 -->
-<section class="cta bg-overlay bg-overlay-dark2" id="cta-1">
+
+<section dir="rtl" class="cta bg-overlay bg-overlay-dark2" style="margin-bottom:40px" id="cta-1">
     <div class="bg-section"><img src="assets/images/cta/1.jpg" alt="background" /></div>
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6">
-                <div class="heading heading-2 heading-light">
-                    <p class="heading-subtitle">Dedicated Customer Teams & An Agile Services</p>
-                    <h2 class="heading-title">Global Logistics Partner To World’s Famous Brands For Over 25 Years!</h2>
-                </div>
-            </div>
-            <!--End .col-lg-6-->
-            <div class="col-12 col-lg-6">
-                <div class="icon-set">
-                    <div class="icon-panel"> <i class="icon flaticon-016-payment-terminal"></i><span>transparent pricing</span></div>
-                    <div class="icon-panel"> <i class="icon flaticon-014-box-3"></i><span>fast, effecient delivery</span></div>
-                    <div class="icon-panel"> <i class="icon flaticon-001-scale-1"></i><span>warehouse storage</span></div>
-                </div>
-            </div>
             <!--End .col-lg-6-->
             <div class="col-12">
                 <div class="contact-panel">
-                    <div class="contact-types"> <a class="button quote-btn" href="javascript:void(0)" data-form="quoteFormActive"> <i class="flaticon-020-order"> </i><span>request a quote</span></a><a class="button track-btn active" href="javascript:void(0)" data-form="trackFormActive"> <i class="flaticon-009-shipping-1"> </i><span>track &amp; trace</span></a></div>
                     <div class="contact-card">
                         <div class="contact-body trackFormActive">
                             <div class="row">
-                                <div class="col-12 col-lg-8">
-                                    <form class="contactForm quote-form mb-0" method="post" action="assets/php/contact.php">
-                                        <h5 class="card-heading">personal data</h5>
-                                        <div class="row">
-                                            <div class="col-12 col-md-12 col-lg-4">
-                                                <input class="form-control" type="text" name="contact-name" placeholder="Name" required="" />
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <input class="form-control" type="text" name="contact-email" placeholder="Email" required="" />
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <input class="form-control" type="text" name="contact-phone" placeholder="Phone" required="" />
-                                            </div>
-                                        </div>
-                                        <h5 class="card-heading">shipment data</h5>
-                                        <div class="row">
-                                            <div class="col-12 col-lg-4">
-                                                <div class="select-container">
-                                                    <select class="form-control">
-                                                        <option value="default">freight type</option>
-                                                        <option value="AL">freight type 1</option>
-                                                        <option value="AK">freight type 2</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <input class="form-control" type="text" name="contact-city" placeholder="city of departure" required="" />
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-4">
-                                                <input class="form-control" type="text" name="contact-destination" placeholder="delivery city" required="" />
-                                            </div>
-                                            <div class="col-12 col-lg-4">
-                                                <div class="select-container">
-                                                    <select class="form-control">
-                                                        <option value="default">incoterms</option>
-                                                        <option value="AL">incoterms 1</option>
-                                                        <option value="AK">incoterms 2</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-2">
-                                                <input class="form-control" type="text" name="contact-weight" placeholder="weight" required="" />
-                                            </div>
-                                            <div class="col-12 col-md-2">
-                                                <input class="form-control" type="text" name="contact-height" placeholder="height" required="" />
-                                            </div>
-                                            <div class="col-12 col-md-2">
-                                                <input class="form-control" type="text" name="contact-width" placeholder="width" required="" />
-                                            </div>
-                                            <div class="col-12 col-md-2">
-                                                <input class="form-control" type="text" name="contact-length" placeholder="length" required="" />
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="custom-radio-group">
-                                                    <div class="custom-control custom-radio custom-control-inline">
-                                                        <input class="custom-control-input" type="radio" id="customRadioInline1" name="customRadioInline1" />
-                                                        <label for="customRadioInline1">fragile</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio custom-control-inline">
-                                                        <input class="custom-control-input" type="radio" id="customRadioInline2" name="customRadioInline1" />
-                                                        <label for="customRadioInline2">express delivery</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio custom-control-inline">
-                                                        <input class="custom-control-input" type="radio" id="customRadioInline3" name="customRadioInline1" />
-                                                        <label for="customRadioInline3">insurance</label>
-                                                    </div>
-                                                    <div class="custom-control custom-radio custom-control-inline">
-                                                        <input class="custom-control-input" type="radio" id="customRadioInline4" name="customRadioInline1" />
-                                                        <label for="customRadioInline4">packaging</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <input class="btn btn--secondary btn--block" type="submit" value="Request A Quote" />
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="contact-result"></div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                <div class="col-12 text-right">
+                                    <h3>تقديم طلب الأستثمار</h3>
                                     <form class="contactForm track-form mb-0" method="post" action="assets/php/contact.php">
                                         <h5 class="card-heading">personal data</h5>
                                         <div class="row">
-                                            <div class="col-12">
-                                                <div class="select-container">
-                                                    <select class="form-control">
+                                            <div class="col-12 text-right">
+                                                <div class="select-container text-right">
+                                                    <select class="form-control text-right">
                                                         <option value="default">shipment type</option>
                                                         <option value="AL">type 1</option>
                                                         <option value="AK">type 2</option>
@@ -335,18 +317,10 @@ CTA #1 Section
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <input class="btn btn--secondary btn--block" type="submit" value="Track &amp; Trace" />
+                                                <input class="btn btn--secondary btn--block" type="submit" value="تقديم طلب" />
                                             </div>
                                         </div>
                                     </form>
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <div class="apply-card widget widget-reservation"><img src="assets/images/contact/1.jpg" alt="Background Image" />
-                                        <div class="widget-content">
-                                            <h5>take your carreer to next level</h5>
-                                            <p>We pride ourselves on providing the best transport & shipping services available all over the world and there is no one comes close to us. </p><a class="btn btn--white" href="javascript:void(0)"><i class="icon-arrow-right"></i>apply now!</a>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -366,7 +340,7 @@ CTA #1 Section
 Features #1 Section
 ============================
 -->
-<section class="features bg-gray" id="features-1">
+{{-- <section class="features bg-gray" id="features-1">
     <div class="container">
         <div class="heading heading-4">
             <div class="row">
@@ -428,13 +402,13 @@ Features #1 Section
         </div>
     </div>
     <!-- End .container-->
-</section>
+</section>  --}}
 <!--
 ============================
 CTA #3 Section
 ============================
 -->
-<section class="cta cta-3 bg-theme" id="cta-3">
+{{-- <section class="cta cta-3 bg-theme" id="cta-3">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-5">
@@ -493,13 +467,13 @@ CTA #3 Section
         <!-- End .row-->
     </div>
     <!-- End .container-->
-</section>
+</section>  --}}
 <!--
 ============================
 Cases & Clients #1 Section
 ============================
 -->
-<section class="cases-clients bg-parllax" id="cases-clients-1">
+{{-- <section class="cases-clients bg-parllax" id="cases-clients-1">
     <div class="cases-standard">
         <div class="container">
             <div class="heading text-center">
@@ -644,13 +618,13 @@ Cases & Clients #1 Section
         </div>
         <!-- End .container-->
     </div>
-</section>
+</section>  --}}
 <!--
 ============================
 Services #3 Section
 ============================
 -->
-<section class="testimonial testimonial-3 bg-overlay bg-overlay-theme">
+<section dir="rtl" class="testimonial testimonial-3 bg-overlay bg-overlay-theme">
     <div class="bg-section"> <img src="assets/images/background/1.jpg" alt="background-img" /></div>
     <div class="container">
         <div class="row">
@@ -662,7 +636,7 @@ Services #3 Section
                     <p class="heading-desc">Serving an impressive list of long-term clients with experience and expertise in multiple industries.</p><a class="btn btn--transparent btn--inverse" href="javascript:void(0)">our services</a>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div dir="ltr" class="col-12 col-lg-6">
                 <div class="carousel owl-carousel carousel-dots" data-slide="1" data-slide-rs="1" data-autoplay="false" data-nav="false" data-dots="true" data-space="40" data-loop="true" data-speed="800">
                     <div class="testimonial-panel">
                         <div class="testimonial-panel-warp">
@@ -724,7 +698,7 @@ Services #3 Section
 Blog #1 Section
 ============================
 -->
-<section class="blog blog-grid" id="blog-1">
+{{-- <section class="blog blog-grid" id="blog-1">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6 offset-lg-3">
@@ -801,14 +775,14 @@ Blog #1 Section
         <!-- End .row-->
     </div>
     <!-- End .container-->
-</section>
+</section>  --}}
 <!--
 ============================
 Google Maps Section
 ============================
 -->
-<section class="map map-3" id="map-1">
-    <iframe class="map-gray map-gray" src="https://maps.google.com/maps?q=Pioneer%20Works&amp;t=m&amp;z=13&amp;output=embed&amp;iwloc=near" width="600" height="450" style="border:0"> </iframe>
+<section dir="rtl" class="map map-3 text-right" id="map-1">
+    <iframe class="map-gray map-gray" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.074086895675!2d31.127624585143735!3d29.97730075719392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584f7de239bbcd%3A0xca7474355a6e368b!2sGiza%20Necropolis!5e0!3m2!1sen!2seg!4v1711819154688!5m2!1sen!2seg" width="600" height="450" style="border:0"> </iframe>
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-4">
@@ -819,9 +793,9 @@ Google Maps Section
                         <div class="collapse show" id="collapse01-1" data-parent="#accordion01">
                             <div class="card-body">
                                 <ul class="list-unstyled info">
-                                    <li><span class="fas fa-map-marker-alt"></span><a href="javascript:void(0)">New York 11226 United States.</a></li>
-                                    <li><span class="fas fa-envelope"></span><a href="mailto::Equita@7oroof.com">Equita@7oroof.com</a></li>
-                                    <li><span class="fas fa-phone-alt"></span><a href="tel:01061245741">(002) 01061245741</a></li>
+                                    <li><span class="fas fa-map-marker-alt"></span><a href="javascript:void(0)">أهرامات الجيزة</a></li>
+                                    <li><span class="fas fa-envelope"></span><a href="mailto::Equita@7oroof.com">nagykerollos110@gmail.com</a></li>
+                                    <li><span class="fas fa-phone-alt"></span><a href="tel:01061245741">+20 1200268302</a></li>
                                 </ul>
                             </div>
                         </div>
